@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Додати готелі</title>
+    <script src="/static/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="/static/style/main.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <a href="/">Головна</a>
+            <a href="/admin/hotels">Готелі</a>
+            <a href="/admin/flight">Авіаквитки</a>
+            <a href="/admin/excursion">Екскурсії</a>
+        </div>
+        <div class="form">
+            <h1>Додати готелі</h1>
+            <div class="admin">
+
+            </div>
+            <input type="text" id="name" placeholder="Назва готелю" class="input">
+            <input type="text" id="location" placeholder="Країна" class="input">
+            <input type="text" id="description" placeholder="Опис" class="input">
+            <input type="text" id="hotel_number" placeholder="Номер кімнати" class="input">
+            <input type="text" id="price" placeholder="Ціна в грн" class="input">
+            <button onclick="button_add_hotel()" type="submit" class="btn">Додати</button>
+        </div>
+    <!--    <div class="information">-->
+    <!--        <button onclick="" type="submit">Вивести інформацію про заброньовані номери</button>-->
+    <!--    </div>-->
+    </main>
+    <script src="/static/admin.js"></script>
+</body>
+</html>

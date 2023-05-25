@@ -1,0 +1,169 @@
+/*........ specification ........*/
+body {
+  font-family: 'Arial', sans-serif;
+  color: #131313;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+div, p, form, input, a, span, button {
+  box-sizing: border-box;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+label {
+  font-size: 14px;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+a, button, input {
+  transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+  outline: none;
+}
+
+/*page*/
+
+main {
+  margin-top: 20px;
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.admin-link, .menu a,
+.admin-link:hover, .menu a:hover,
+.admin-link:active, .menu a:active {
+  color: #131313;
+  font-size: 16px;
+  padding: 4px 20px;
+}
+
+.admin-link:hover, .menu a:hover {
+  background: #000;
+  color: #fff;
+  padding: 4px 20px;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #131313;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.input-date-ml {
+  margin-left: 10px;
+}
+
+.input-date {
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  background: #131313;
+  color: #fff;
+  border: 1px solid #131313;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fff;
+  border: 1px solid #131313;
+  color: #131313;
+}
+
+.authorization {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #c6c6c6;
+}
+
+/*output*/
+
+.output {
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.output-text {
+  margin-bottom: 50px;
+
+}
+
+.output-text:last-child {
+  margin-bottom: 0;
+}
+
+.caption {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/*admin*/
+
+.admin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

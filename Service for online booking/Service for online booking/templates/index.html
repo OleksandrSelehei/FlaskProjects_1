@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Оберіть готель</title>
+    <link rel="stylesheet" href="/static/style/main.css">
+    <script src="/static/jquery-3.6.4.js"></script>
+</head>
+<body onload="all_search_hotel()">
+    <main>
+        <a href="/admin" class="admin-link">Admin</a>
+        <div class="menu">
+            <a href="/hotels">Готелі</a>
+            <a href="/flight">Авіаквитки</a>
+            <a href="/excursion">Екскурсії</a>
+        </div>
+        <h1>Оберіть готель</h1>
+        <div class="form">
+            <input type="text" id="location" placeholder="Оберіть країну" class="input">
+            <form>
+                <label for="start-date">Початок:</label>
+                <input type="date" id="start-date" name="start-date" class="input-date"><br>
+
+                <label for="end-date">Кінець:</label>
+                <input type="date" id="end-date" name="end-date" class="input-date input-date-ml"><br>
+            </form>
+            <button onclick="search_hotel()" type="submit" class="btn">Пошук</button>
+        </div>
+
+        <div class="result">
+
+        </div>
+    </main>
+    <script src="/static/client.js"></script>
+</body>
+</html>

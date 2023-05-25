@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/style/main.css">
+    <script src="/static/jquery-3.6.4.js"></script>
+</head>
+<body onload="all_search_excursion()">
+    <main>
+        <a href="/admin" class="admin-link">Admin</a>
+        <div class="menu">
+            <a href="/hotels">Готелі</a>
+            <a href="/flight">Авіаквитки</a>
+            <a href="/excursion">Екскурсії</a>
+        </div>
+        <h1>Оберіть екскурсію</h1>
+        <div class="form">
+            <input type="text" id="location" placeholder="Оберіть країну" class="input">
+            <form>
+                <label for="start-date">Оберіть дату:</label>
+                <input type="date" id="start-date" name="start-date" class="input-date">
+            </form>
+            <button onclick="search_excursion()" type="submit" class="btn">Пошук</button>
+        </div>
+    </main>
+    <div class="result">
+
+    </div>
+    <script src="/static/client.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оберіть авіаквиток</title>
+    <link rel="stylesheet" href="/static/style/main.css">
+    <script src="/static/jquery-3.6.4.js"></script>
+</head>
+<body onload="all_search_flight()">
+    <main>
+        <a href="/admin" class="admin-link">Admin</a>
+        <div class="menu">
+            <a href="/hotels">Готелі</a>
+            <a href="/flight">Авіаквитки</a>
+            <a href="/excursion">Екскурсії</a>
+        </div>
+        <h1>Оберіть авіаквиток</h1>
+        <div class="form">
+            <input type="text" id="air_company" placeholder="Оберіть авіакомпанію" class="input">
+            <input type="text" id="country_departing" placeholder="Оберіть країну відправлення" class="input">
+            <input type="text" id="country_arrives" placeholder="Оберіть країну прибуття" class="input">
+            <form>
+                <label for="start-date">Оберіть дату:</label>
+                <input type="date" id="start-date" name="start-date" class="input-date input-date-ml">
+            </form>
+            <form>
+                <label for="departure-time">Оберіть час вильоту:</label>
+                <input type="time" id="departure-time" name="departure-time" class="input-date">
+            </form>
+            <button onclick="search_flight()" type="submit" class="btn">Пошук</button>
+        </div>
+    </main>
+    <div class="result">
+    </div>
+    <script src="/static/client.js"></script>
+</body>
+</html>

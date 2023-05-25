@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/static/jquery-3.6.4.js"></script>
+    <meta charset="UTF-8">
+    <title>Excursion add</title>
+    <link rel="stylesheet" href="/static/style/main.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <a href="/">Головна</a>
+            <a href="/admin/hotels">Готелі</a>
+            <a href="/admin/flight">Авіаквитки</a>
+            <a href="/admin/excursion">Екскурсії</a>
+        </div>
+        <div class="form">
+            <h1>Додати Екскурсії</h1>
+            <div class="admin">
+
+            </div>
+            <input type="text" id="name" placeholder="Назва екскурсії" class="input">
+            <input type="text" id="location" placeholder="Країна" class="input">
+            <input type="text" id="description" placeholder="Опис" class="input">
+            <input type="text" id="places" placeholder="Місця" class="input">
+            <form>
+                <label for="start-date">Оберіть дату:</label>
+                <input type="date" id="start-date" name="start-date" class="input-date input-date-ml">
+            </form>
+            <input type="text" id="price" placeholder="Ціна в грн" class="input">
+            <button onclick="button_add_excursion()" type="submit" class="btn">Додати</button>
+        </div>
+    </main>
+    <script src="/static/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Додати авіаквитки</title>
+    <link rel="stylesheet" href="/static/style/main.css">
+    <script src="/static/jquery-3.6.4.js"></script>
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <a href="/">Головна</a>
+            <a href="/admin/hotels">Готелі</a>
+            <a href="/admin/flight">Авіаквитки</a>
+            <a href="/admin/excursion">Екскурсії</a>
+        </div>
+        <div class="form">
+            <h1>Додати авіаквитки</h1>
+            <div class="admin">
+
+            </div>
+            <input type="text" id="air_company" placeholder="Авіаційна компанія" class="input">
+            <input type="text" id="airport_departing" placeholder="Назва аіропотру відправлення" class="input">
+            <input type="text" id="airport_arrives" placeholder="Назва аіропотру прибуття" class="input">
+            <input type="text" id="country_departing" placeholder="Країна відправки" class="input">
+            <input type="text" id="country_arrives" placeholder="Країна прибуття" class="input">
+            <input type="text" id="seat_number" placeholder="Місце" class="input">
+            <form>
+                <label for="start-date">Оберіть дату:</label>
+                <input type="date" id="start-date" name="start-date" class="input-date">
+            </form>
+            <form>
+                <div class="form-wrap">
+                    <label for="departure-time">Час вильоту:</label>
+                    <input type="time" id="departure-time" name="departure-time" class="input-date input-date-ml">
+                </div>
+
+                <label for="arrival-time">Час прибуття:</label>
+                <input type="time" id="arrival-time" name="arrival-time" class="input-date">
+            </form>
+
+            <input type="text" id="price" placeholder="Ціна в грн" class="input">
+            <button onclick="button_add_flight()" type="submit" class="btn">Додати</button>
+        </div>
+    </main>
+    <script src="/static/admin.js"></script>
+</body>
+</html>
